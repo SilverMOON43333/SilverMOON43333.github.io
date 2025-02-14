@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جستجو</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* You can change this to any variable font */
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>جستجو در سایت</h1>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="عبارت جستجو را وارد کنید..." required>
+        <input type="submit" value="جستجو">
+    </form>
+
+</body>
+</html>

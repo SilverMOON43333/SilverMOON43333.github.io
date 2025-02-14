@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comp Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/lalezar-font@v6.0.0/dist/font-face.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Comp Hub</div>
+    <div class="nav-links">
+      <a href="#search">جستجو</a>
+      <a href="register.html">ثبت نام</a>
+      <a href="login.html">ورود</a>
+      <a href="articles.html">مقالات</a>
+      <a href="contact.html">تماس با ما</a>
+      <a href="about.html">درباره ما</a>
+    </div>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <h1 class="welcome-text">به Comp Hub خوش آمدید!</h1>
+    <p class="description">این وب‌سایت مرجع مقالات فناوری و تکنولوژی است.</p>
+  </section>
+
+  <!-- JavaScript to Hide Loading Animation -->
+  <script>
+    window.addEventListener("load", function () {
+      const loadingOverlay = document.getElementById("loading-overlay");
+      loadingOverlay.style.opacity = "0";
+      setTimeout(() => {
+        loadingOverlay.style.display = "none";
+      }, 500); // Delay to allow fade-out animation
+    });
+  </script>
+</body>
+</html>
